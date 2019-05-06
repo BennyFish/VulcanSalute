@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title></title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="../static/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../static/css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="../static/css/jquery-ui.theme.min.css">
+    <!-- D3 Tooltip CSS -->
+    <link rel="stylesheet" href="../static/css/d3-tip.css">
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                <div class="navbar-header">
+                <a class="navbar-brand" href="/">Vulcan Salute</a>
+                </div>
+                <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="worldmap">World Map Life Expectancy</a></li>
+                <li><a href="LE">Historical Gender Life Expectancy</a></li>
+                <li><a href="citymap">Top Cities </a></li>
+                <li><a href="prediction">Life Expectancy Predictions</a></li>
+                <li><a href="calc">Financial Calculator</a></li>
+                </ul>
+                </div>
+                </nav>
+
+
+
+    <!-- Bootstrap grid setup -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <button id="play-button" class="btn btn-primary">Play</button>
+                <button id="reset-button" class="btn btn-primary">Reset</button>
+                <div id="slider-div">
+                    <label>Year: <span id="year">1800</span></label>
+                    <div id="date-slider"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <select id="continent-select" class="form-control">
+                    <option selected value="all">All</option>
+                    <option value="europe">Europe</option>
+                    <option value="asia">Asia</option>
+                    <option value="americas">Americas</option>
+                    <option value="africa">Africa</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="chart-area"></div>
+            </div>
+        </div>
+    </div>
+
+<!-- External JS libraries -->
+<script src="../static/js/jquery.min.js"></script>
+<script src="../static/js/jquery-ui.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/d3.min.js"></script>
+<script src="../static/js/d3-tip.js"></script>
+<!-- Custom JS -->
+<script src="../static/js/main.js"></script>
+
+</body>
+</html>

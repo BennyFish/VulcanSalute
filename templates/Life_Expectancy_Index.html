@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Male vs Female</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body, html {
+            height: 90%;
+            margin: 0;
+        }
+
+        .hero-image {
+            background-image: url("../static/images/terrace.jpg") ;
+            height: 55%;
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                <div class="navbar-header">
+                <a class="navbar-brand" href="/">Vulcan Salute</a>
+                </div>
+                <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="worldmap">World Map Life Expectancy</a></li>
+                <li><a href="LE">Historical Gender Life Expectancy</a></li>
+                <li><a href="citymap">Top Cities </a></li>
+                <li><a href="prediction">Life Expectancy Predictions</a></li>
+                <li><a href="calc">Financial Calculator</a></li>
+                </ul>
+                </div>
+                </nav>
+
+
+    <div class="hero-image"></div>
+
+
+    <select id="selDataset" onchange="getDataCharts(this.value)">
+        <option value="dataset0">Please select a bar chart</option>
+        <option value="dataset1">Life Expectancy - Male</option>
+        <option value="dataset2">Life Expectancy - Female</option>
+
+    </select>
+
+    <div id="plot"></div>
+
+    <script src="../static/LE_Plots.js"></script>
+
+</body>
+</html>
